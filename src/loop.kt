@@ -3,12 +3,12 @@ class Loop{
         var count: Int = 0;
         for(i in 1..10){
             if(i == stopLimit){
-                break;
+                break
             }
-            count++;
+            count++
             println("Index is :- $i");
         }
-        return count;
+        return count
     }
 }
 
