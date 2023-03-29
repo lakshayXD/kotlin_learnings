@@ -1,9 +1,14 @@
 fun main(args: Array<String>){
-    Car("BMW")
+    var car: Car = Car("BMW")
+    println(car.name)
 }
 
-class Car(name : String){
+class Car(var name : String){
     init {
         println("Car name is --> $name")
+    }
+
+    constructor(n: String, id: Int) :this(n) {
+        println("Car ID is --> $id")
     }
 }
